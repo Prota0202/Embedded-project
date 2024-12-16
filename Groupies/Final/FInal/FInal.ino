@@ -116,29 +116,29 @@ void Obstacle() {
 void forward() {
     myMotorLEFT->setSpeed(baseSpeed);
     myMotorRIGHT->setSpeed(baseSpeed);
-    myMotorLEFT->run(FORWARD);
-    myMotorRIGHT->run(FORWARD);
+    myMotorLEFT->run(BACKWARD);
+    myMotorRIGHT->run(BACKWARD);
 }
 
 void backward() {
     myMotorLEFT->setSpeed(baseSpeed);
     myMotorRIGHT->setSpeed(baseSpeed);
-    myMotorLEFT->run(BACKWARD);
-    myMotorRIGHT->run(BACKWARD);
+    myMotorLEFT->run(FORWARD);
+    myMotorRIGHT->run(FORWARD);
 }
 
 void right() {
     myMotorLEFT->setSpeed(baseSpeed);
     myMotorRIGHT->setSpeed(baseSpeed);
-    myMotorLEFT->run(FORWARD);
-    myMotorRIGHT->run(BACKWARD);
+    myMotorLEFT->run(BACKWARD);
+    myMotorRIGHT->run(FORWARD);
 }
 
 void left() {
     myMotorLEFT->setSpeed(baseSpeed);
     myMotorRIGHT->setSpeed(baseSpeed);
-    myMotorLEFT->run(BACKWARD);
-    myMotorRIGHT->run(FORWARD);
+    myMotorLEFT->run(FORWARD);
+    myMotorRIGHT->run(BACKWARD);
 }
 
 void Stop() {
